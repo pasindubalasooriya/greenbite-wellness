@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("calculator-form");
   const resultsContainer = document.getElementById("results");
+  const finalResultsContainer = document.getElementById("final-results");
 
   /*
     For males: 
@@ -24,25 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
     Macronutrient breakdown - how calories are divided into carbs, protein, and fat. 
 
         Carbohydrates (4 kcal per gram) 
-
         Proteins (4 kcal per gram) 
-
         Fats (9 kcal per gram) 
 
     A common healthy ratio is: 
 
         50% Carbs 
-
         20% Protein 
-
         30% Fat 
 
     To calculate macros from TDEE: 
 
         Carbs (g) = (TDEE × 0.50) ÷ 4 
-
         Protein (g) = (TDEE × 0.20) ÷ 4 
-
         Fat (g) = (TDEE × 0.30) ÷ 9 
     */
 
@@ -63,27 +58,63 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
+  function animateCircle(className, percentage) {
+    const circle = document.querySelector(`.${className}`);
+    const radius = circle.r.baseVal.value;
+    const circumference = radius * 2 * Math.PI;
+    const offset = circumference - (percentage / 100) * circumference;
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDashoffset = offset;
+  }
+
   function updateResults(results) {
-    document.getElementById("bmr").textContent = Math.round(results.bmr);
-
-    document.getElementById("tdee").textContent = Math.round(results.tdee);
-
-    document.getElementById("carbs").textContent = results.macros.carbs.grams;
-    document.getElementById("carbs-calories").textContent =
-      results.macros.carbs.calories;
-
-    document.getElementById("protein").textContent =
-      results.macros.protein.grams;
-    document.getElementById("protein-calories").textContent =
-      results.macros.protein.calories;
-
-    document.getElementById("fat").textContent = results.macros.fat.grams;
-    document.getElementById("fat-calories").textContent =
-      results.macros.fat.calories;
-
     resultsContainer.classList.remove("hidden");
+    let progress = 0;
+    const progressBarDuration = 1500;
+    const progressBarStep = 100;
+    const progressBar = document.getElementById("result-progress");
+    progressBar.style.width = "0%";
 
-    resultsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+    const progressInterval = setInterval(() => {
+      progress += 100 / (progressBarDuration / progressBarStep);
+      if (progress >= 100) {
+        progress = 100;
+        clearInterval(progressInterval);
+      }
+      progressBar.style.width = `${progress}%`;
+    }, progressBarStep);
+
+    setTimeout(() => {
+      finalResultsContainer.classList.remove("hidden");
+    }, 2000);
+
+    const bmrElement = document.getElementById("bmr");
+    bmrElement.textContent = Math.round(results.bmr);
+
+    const tdeeElement = document.getElementById("tdee");
+    tdeeElement.textContent = Math.round(results.tdee);
+
+    const carbsElement = document.getElementById("carbs");
+    const proteinElement = document.getElementById("protein");
+    const fatElement = document.getElementById("fat");
+
+    carbsElement.textContent = results.macros.carbs.grams;
+    proteinElement.textContent = results.macros.protein.grams;
+    fatElement.textContent = results.macros.fat.grams;
+
+    const carbsCalElement = document.getElementById("carbs-calories");
+    const proteinCalElement = document.getElementById("protein-calories");
+    const fatCalElement = document.getElementById("fat-calories");
+
+    carbsCalElement.textContent = results.macros.carbs.calories;
+    proteinCalElement.textContent = results.macros.protein.calories;
+    fatCalElement.textContent = results.macros.fat.calories;
+
+    animateCircle("carbs-circle", 50);
+    animateCircle("protein-circle", 20);
+    animateCircle("fat-circle", 30);
+
+    // resultsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   form.addEventListener("submit", (e) => {
