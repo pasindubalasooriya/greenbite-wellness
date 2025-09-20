@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <script src="js/quotes.js" defer></script>
     <script src="js/nav.js" defer></script>
+    <script src="js/newsletter.js" defer></script>
   </head>
   <body>
     <div class="topnav" id="nav-menu">
@@ -31,24 +32,28 @@
       </section>
 
       <section>
-        <h2>Featured Content</h2>
-        <div>
-          <div>
+        <h2 class="section-title">Featured Content</h2>
+        <div class="featured-content">
+          <div class="feature-card">
+            <h3>&#128161; Health Tip of the Day</h3>
+            <p id="health-tip">Loading today's health tip...</p>
+          </div>
+          <div class="feature-card">
             <h3>Healthy Recipes</h3>
             <p>Discover delicious and nutritious recipes.</p>
-            <a href="">View Recipes</a>
+            <a href="pages/recipes.html">View Recipes</a>
           </div>
-          <div>
+          <div class="feature-card">
             <h3>Nutrition Calculator</h3>
             <p>Calculate your daily nutritional needs.</p>
             <a href="">Start Calculating</a>
           </div>
-          <div>
+          <div class="feature-card">
             <h3>Workout Generator</h3>
             <p>Create personalized workout plans.</p>
             <a href="">Generate Workout</a>
           </div>
-          <div>
+          <div class="feature-card">
             <h3>Mindfulness</h3>
             <p>Practice mindfulness and relaxation techniques.</p>
             <a href="">Explore Mindfulness</a>
@@ -56,5 +61,36 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Links</h4>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="pages/recipes.html">Recipes</a>
+            <a href="pages/calculator.html">Calculator</a>
+            <a href="pages/workout.html">Workout</a>
+            <a href="pages/mindfulness.html">Mindfulness</a>
+            <a href="pages/contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-section">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter!</p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Your email"
+              id="newsletter-email"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 GreenBite Wellness</p>
+      </div>
+    </footer>
   </body>
 </html>
