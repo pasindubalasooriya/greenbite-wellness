@@ -2,16 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenBite Wellness</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <script src="js/quotes.js" defer></script>
+    <script src="js/nav.js" defer></script>
   </head>
   <body>
+    <div class="topnav" id="nav-menu">
+      <a href="../index.html" class="active">Home</a>
+      <a href="../pages/recipes.html">Recipes</a>
+      <a href="../pages/calculator.html">Calculator</a>
+      <a href="../pages/workout.html">Workout</a>
+      <a href="../pages/mindfulness.html">Mindfulness</a>
+      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+        &#9776;
+      </a>
+    </div>
     <main>
       <section class="hero">
         <div>
           <h1>GreenBite Wellness</h1>
-          <p id="rotating-quote" class="quote-text">Your journey to a healthier lifestyle starts here.</p>
+          <p id="rotating-quote" class="quote-text">
+            Your journey to a healthier lifestyle starts here.
+          </p>
         </div>
       </section>
 
