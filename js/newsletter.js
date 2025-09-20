@@ -1,3 +1,4 @@
+//Runs when the page is loaded
 document.addEventListener("DOMContentLoaded", () => {
   const newsletterForm = document.querySelector(".newsletter-form");
 

@@ -33,6 +33,7 @@ function getDailyHealthTip() {
   return tips[i];
 }
 
+//Runs when the page is loaded
 document.addEventListener("DOMContentLoaded", () => {
   const tipEl = document.getElementById("health-tip");
   if (tipEl) {
