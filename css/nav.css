@@ -19,7 +19,7 @@
 }
 
 .topnav a.active {
-  background-color: #04aa6d;
+  background-color: #0a8a0f;
   color: white;
 }
 
@@ -35,7 +35,7 @@
   .topnav a.icon {
     float: right;
     display: block;
-    background-color: #04aa6d;
+    background-color: #0a8a0f;
     color: white;
   }
 }

@@ -57,7 +57,7 @@
 }
 
 .submit-button {
-  background-color: #4caf50;
+  background-color: #0a8a0f;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -140,7 +140,7 @@
 
 .confirmation-message {
   display: none;
-  background-color: #4caf50;
+  background-color: #0a8a0f;
   color: white;
   padding: 1rem;
   border-radius: 4px;

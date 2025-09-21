@@ -41,7 +41,7 @@
 }
 
 .generate-button {
-  background-color: #4caf50;
+  background-color: #0a8a0f;
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -120,7 +120,7 @@
 }
 
 .timer-button.start {
-  background-color: #4caf50;
+  background-color: #0a8a0f;
   color: white;
 }
 
@@ -146,7 +146,7 @@
 .progress {
   width: 0%;
   height: 100%;
-  background-color: #4caf50;
+  background-color: #0a8a0f;
   transition: width 1s linear;
 }
 

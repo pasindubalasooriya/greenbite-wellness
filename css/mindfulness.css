@@ -70,7 +70,7 @@
 }
 
 .timer-button.start {
-  background-color: #4caf50;
+  background-color: #0a8a0f;
   color: white;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .toggle-button input:checked + .toggle-slider {
-  background-color: #4caf50;
+  background-color: #0a8a0f;
 }
 
 .toggle-button input:checked + .toggle-slider:before {
@@ -206,7 +206,7 @@
 
 .preset-button:hover,
 .preset-button.active {
-  background-color: #4caf50;
+  background-color: #0a8a0f;
   color: white;
   border-color: #4caf50;
 }

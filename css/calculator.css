@@ -73,7 +73,7 @@
 }
 
 .calculate-btn {
-  background: #4caf50;
+  background: #0a8a0f;
   color: white;
   padding: 1rem;
   border: none;
@@ -159,7 +159,7 @@
 .progress-bar {
   width: 0;
   height: 100%;
-  background: #4caf50;
+  background: #0a8a0f;
   border-radius: 4px;
   transition: width 1.5s ease-in-out;
 }
