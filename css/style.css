@@ -179,7 +179,13 @@ body {
 .image-container {
   display: flex;
   justify-content: center;
-  margin: 3rem auto;
+  margin: 2rem auto;
+}
+
+.feature-card-image {
+  width: 75%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {

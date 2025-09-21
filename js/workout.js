@@ -4,21 +4,23 @@ const exercises = {
       {
         name: "Push-Ups",
         description:
-          "Standard push-ups targeting chest, shoulders, and triceps",
+          "Standard push-ups targeting chest, shoulders, and triceps. Keep your body straight, lower until elbows are at 90°, then push back up.",
         duration: 45,
         sets: 3,
         rest: 15,
       },
       {
         name: "Diamond Push-Ups",
-        description: "Close-grip push-ups targeting triceps",
+        description:
+          "Close-grip push-ups targeting triceps. Place hands together under chest, form a diamond shape, and keep elbows close to your body.",
         duration: 30,
         sets: 3,
         rest: 15,
       },
       {
         name: "Arm Circles",
-        description: "Circular motions with arms extended",
+        description:
+          "Circular motions with arms extended. Stand tall, extend arms to sides, and make small controlled circles forward and backward.",
         duration: 30,
         sets: 2,
         rest: 10,
@@ -27,21 +29,24 @@ const exercises = {
     dumbbells: [
       {
         name: "Bicep Curls",
-        description: "Standing bicep curls with dumbbells",
+        description:
+          "Standing bicep curls with dumbbells. Keep elbows close to torso, curl weights up while squeezing biceps, then lower slowly.",
         duration: 45,
         sets: 3,
         rest: 20,
       },
       {
         name: "Tricep Extensions",
-        description: "Overhead tricep extensions with dumbbells",
+        description:
+          "Overhead tricep extensions with dumbbells. Hold dumbbell overhead, keep elbows in, lower weight behind head, then extend arms.",
         duration: 45,
         sets: 3,
         rest: 20,
       },
       {
         name: "Hammer Curls",
-        description: "Standing hammer curls with dumbbells",
+        description:
+          "Standing hammer curls with dumbbells. Hold dumbbells with palms facing in, curl up, and lower with control.",
         duration: 45,
         sets: 3,
         rest: 20,
@@ -52,21 +57,24 @@ const exercises = {
     noEquipment: [
       {
         name: "Bodyweight Squats",
-        description: "Standard squats targeting quadriceps and glutes",
+        description:
+          "Standard squats targeting quadriceps and glutes. Stand with feet shoulder-width, lower hips back and down, keep chest up, then rise.",
         duration: 45,
         sets: 3,
         rest: 20,
       },
       {
         name: "Lunges",
-        description: "Alternating lunges targeting legs and balance",
+        description:
+          "Alternating lunges targeting legs and balance. Step forward, lower until both knees are at 90°, push back to start, alternate legs.",
         duration: 45,
         sets: 3,
         rest: 20,
       },
       {
         name: "Calf Raises",
-        description: "Standing calf raises for lower leg strength",
+        description:
+          "Standing calf raises for lower leg strength. Stand tall, push through balls of feet to raise heels, pause, then lower slowly.",
         duration: 30,
         sets: 3,
         rest: 15,
@@ -75,21 +83,24 @@ const exercises = {
     dumbbells: [
       {
         name: "Dumbbell Squats",
-        description: "Squats while holding dumbbells",
+        description:
+          "Squats while holding dumbbells. Hold dumbbells at sides, squat down keeping chest up, push through heels to stand.",
         duration: 45,
         sets: 3,
         rest: 20,
       },
       {
         name: "Weighted Lunges",
-        description: "Lunges while holding dumbbells",
+        description:
+          "Lunges while holding dumbbells. Hold dumbbells at sides, step forward, lower until knees are at 90°, push back to start.",
         duration: 45,
         sets: 3,
         rest: 20,
       },
       {
         name: "Romanian Deadlifts",
-        description: "Dumbbell deadlifts targeting hamstrings",
+        description:
+          "Dumbbell deadlifts targeting hamstrings. Hold dumbbells in front, hinge at hips, keep back flat, lower weights to mid-shin, then rise.",
         duration: 45,
         sets: 3,
         rest: 20,
@@ -100,21 +111,24 @@ const exercises = {
     noEquipment: [
       {
         name: "Crunches",
-        description: "Basic crunches targeting upper abs",
+        description:
+          "Basic crunches targeting upper abs. Lie on back, knees bent, lift shoulders off floor using abs, then lower slowly.",
         duration: 30,
         sets: 3,
         rest: 15,
       },
       {
         name: "Plank",
-        description: "Standard plank hold for core stability",
+        description:
+          "Standard plank hold for core stability. Keep body in a straight line from head to heels, engage core, hold position.",
         duration: 45,
         sets: 3,
         rest: 20,
       },
       {
         name: "Mountain Climbers",
-        description: "Dynamic movement targeting full core",
+        description:
+          "Dynamic movement targeting full core. Start in plank, drive knees toward chest one at a time, keep hips low and core tight.",
         duration: 30,
         sets: 3,
         rest: 15,
@@ -123,21 +137,24 @@ const exercises = {
     dumbbells: [
       {
         name: "Russian Twists",
-        description: "Seated twists with dumbbell",
+        description:
+          "Seated twists with dumbbell. Sit with knees bent, lean back slightly, twist torso side to side holding dumbbell.",
         duration: 45,
         sets: 3,
         rest: 20,
       },
       {
         name: "Weighted Sit-Ups",
-        description: "Sit-ups holding a dumbbell",
+        description:
+          "Sit-ups holding a dumbbell. Hold dumbbell at chest, perform sit-up by curling torso up, then lower with control.",
         duration: 45,
         sets: 3,
         rest: 20,
       },
       {
         name: "Side Bends",
-        description: "Standing side bends with dumbbell",
+        description:
+          "Standing side bends with dumbbell. Stand tall, hold dumbbell in one hand, bend sideways at waist, return to start, switch sides.",
         duration: 30,
         sets: 3,
         rest: 15,

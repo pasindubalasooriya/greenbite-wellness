@@ -23,15 +23,15 @@
 }
 
 .checkbox-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .checkbox-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-right: 1.5rem;
 }
 
 .checkbox-item input[type="checkbox"] {
