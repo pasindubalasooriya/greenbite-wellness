@@ -1,30 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      name="description"
+      content="Contact page"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenBite Wellness</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
+    <title>Contact Us - GreenBite Wellness</title>
+    <link rel="stylesheet" href="../css/style.css" blocking="render" />
+    <link rel="stylesheet" href="../css/nav.css" blocking="render" />
+    <link rel="stylesheet" href="../css/contact.css" blocking="render" />
     <script src="../js/navigation.js" defer></script>
+    <script src="../js/contact.js" defer></script>
     <script src="../js/newsletter.js" defer></script>
   </head>
   <body>
     <div class="topnav" id="nav-menu">
-      <a href="../index.html" class="active">Home</a>
+      <a href="../index.html">Home</a>
       <a href="../pages/recipes.html">Recipes</a>
       <a href="../pages/calculator.html">Calculator</a>
       <a href="../pages/workout.html">Workout</a>
       <a href="../pages/mindfulness.html">Mindfulness</a>
-      <a href="../pages/contact.html">Contact</a>
+      <a href="../pages/contact.html" class="active">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="openMenu()">
         &#9776;
       </a>
     </div>
     <main>
-      
+      <div class="contact-container">
+        <h1>Contact Us</h1>
 
-      
+        <section class="contact-form-container">
+          <div class="confirmation-message">
+            Thank you for your message! We'll get back to you soon.
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+              <div class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <div class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <div class="error-message"></div>
+            </div>
+
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </section>
+
+        <section class="map-container">
+          <h2>Visit GreenBite HQ</h2>
+          <iframe title="Google Maps Location of GreenBite HQ"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22405.65764292297!2d79.86885859318292!3d6.914724932572556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596d3cb8fe07%3A0x2b0ae2edd563a661!2sAsia%20Pacific%20Institute%20of%20Information%20Technology%20(APIIT)!5e0!3m2!1sen!2slk!4v1758461881249!5m2!1sen!2slk"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+
+        <section class="faq-container">
+          <h2>Frequently Asked Questions</h2>
+          <ul class="accordion">
+            <li class="accordion-item">
+              <div class="accordion-header">What services do you offer?</div>
+              <div class="accordion-content">
+                <p>
+                  We offer a comprehensive range of wellness services including
+                  personalized nutrition plans, workout routines, mindfulness
+                  exercises, and healthy recipes. Our platform is designed to
+                  support your journey to a healthier lifestyle.
+                </p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <div class="accordion-header">How can I get started?</div>
+              <div class="accordion-content">
+                <p>
+                  Getting started is easy! Simply visit our website, explore our
+                  recipes section, use our nutrition calculator, try our workout
+                  generator, or practice mindfulness with our guided exercises.
+                  You can also subscribe to our newsletter for regular updates
+                  and tips.
+                </p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <div class="accordion-header">Are your services free?</div>
+              <div class="accordion-content">
+                <p>
+                  Yes! All our basic features are completely free to use. We
+                  believe in making health and wellness accessible to everyone.
+                </p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <div class="accordion-header">
+                Can I contribute my own recipes?
+              </div>
+              <div class="accordion-content">
+                <p>
+                  We welcome recipe contributions from our community! Please use
+                  the contact form above to submit your healthy recipes. Make
+                  sure to include ingredients, instructions, and nutritional
+                  information if possible.
+                </p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <div class="accordion-header">How do I report an issue?</div>
+              <div class="accordion-content">
+                <p>
+                  If you encounter any issues while using our platform, please
+                  use the contact form above to report them. Include as much
+                  detail as possible to help us resolve the problem quickly.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
