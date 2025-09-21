@@ -41,7 +41,7 @@
 .timer-container {
   margin: 2rem auto;
   padding: 1rem;
-  background-color: #f5f5f5;
+  background-color: #f0f3ea;
   border-radius: 8px;
   max-width: 400px;
 }
@@ -156,7 +156,7 @@
 .session-tracker {
   margin: 2rem auto;
   padding: 1rem;
-  background-color: #f5f5f5;
+  background-color: #f0f3ea;
   border-radius: 8px;
   max-width: 400px;
 }
