@@ -145,7 +145,7 @@
 }
 
 .num-counter {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-right: 0.5rem;
   color: #4caf50;
@@ -261,5 +261,9 @@
 
   .result-value {
     font-size: 1.5rem;
+  }
+
+  .num-counter {
+    font-size: 1.8rem;
   }
 }

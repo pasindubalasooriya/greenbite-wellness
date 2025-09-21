@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenBite Wellness</title>
+    <title>Healthy Recipes - GreenBite Wellness</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
     <script src="../js/navigation.js" defer></script>
+    <script src="../js/recipes.js" defer></script>
     <script src="../js/newsletter.js" defer></script>
   </head>
   <body>
@@ -22,9 +24,30 @@
       </a>
     </div>
     <main>
-      
+      <section class="recipes-header">
+        <h1>Healthy Recipes</h1>
+        <div class="search-filter-container">
+          <input
+            type="text"
+            id="recipe-search"
+            placeholder="Search recipes..."
+          />
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+          </select>
+        </div>
+      </section>
 
-      
+      <section class="recipes-container">
+        <div class="recipe-grid"></div>
+      </section>
+
+      <div id="recipe-modal" class="modal">
+        <div class="modal-content"></div>
+      </div>
     </main>
 
     <footer class="footer">
