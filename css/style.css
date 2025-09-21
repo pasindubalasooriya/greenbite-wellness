@@ -173,8 +173,13 @@ body {
   max-width: 500px;
   border-radius: 10px;
   object-fit: cover;
-  margin-bottom: 2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
 }
 
 @media (max-width: 600px) {
