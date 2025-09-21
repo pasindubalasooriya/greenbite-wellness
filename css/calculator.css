@@ -126,13 +126,6 @@
   font-size: 0.9rem;
 }
 
-.calculator-image {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 2rem;
-}
-
 .counter-container {
   margin: 1.5rem 0;
 }
@@ -250,7 +243,7 @@
   margin-top: 0.25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .calculator-container {
     grid-template-columns: 1fr;
   }

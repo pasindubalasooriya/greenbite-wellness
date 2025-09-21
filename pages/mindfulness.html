@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenBite Wellness</title>
+    <title>Mindfulness - GreenBite Wellness</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/mindfulness.css" />
     <script src="../js/navigation.js" defer></script>
+    <script src="../js/mindfulness.js" defer></script>
     <script src="../js/newsletter.js" defer></script>
   </head>
   <body>
@@ -22,9 +24,68 @@
       </a>
     </div>
     <main>
-      
+      <div class="mindfulness-container">
+        <h1>Mindfulness Practice</h1>
+        <img src="../images/mf.jpg" alt="Healthy Food" class="main-image" />
 
-      
+        <section class="breathing-container">
+          <h2>Guided Breathing</h2>
+          <div class="breathing-animation">
+            <img
+              src="../images/b.png"
+              alt="Breathing animation"
+              id="breathing-gif"
+            />
+            <span class="breathing-text">Click to start</span>
+          </div>
+        </section>
+
+        <section class="session-tracker">
+          <h2>Your Progress</h2>
+          <div class="session-stats">
+            <div class="stat-card">
+              <div class="stat-number" id="total-sessions">0</div>
+              <div class="stat-label">Total Breathing Sessions</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="timer-container">
+          <h2>Pomodoro Timer</h2>
+          <div class="time-presets">
+            <button class="preset-button" data-time="5">5 min</button>
+            <button class="preset-button active" data-time="25">25 min</button>
+            <button class="preset-button" data-time="45">45 min</button>
+          </div>
+          <div class="timer-display">25:00</div>
+          <div class="timer-controls">
+            <button class="timer-button start">Start</button>
+            <button class="timer-button pause">Pause</button>
+            <button class="timer-button reset">Reset</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Ambient Sounds</h2>
+          <div class="sound-controls">
+            <label class="toggle-button">
+              <input type="checkbox" data-sound="forest" />
+              <span class="toggle-slider"></span>
+              <span class="toggle-label">Forest &#127795;</span>
+            </label>
+            <label class="toggle-button">
+              <input type="checkbox" data-sound="waves" />
+              <span class="toggle-slider"></span>
+              <span class="toggle-label">Ocean Waves &#127754;</span>
+            </label>
+            <label class="toggle-button">
+              <input type="checkbox" data-sound="rain" />
+              <span class="toggle-slider"></span>
+              <span class="toggle-label">Rain &#9748;</span>
+            </label>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
